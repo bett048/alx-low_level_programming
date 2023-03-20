@@ -1,14 +1,15 @@
 #include<stdio.h>
 /**
  * main - function
- *
- * Return:Alwaays 0
+ * Return: Always 0
  */
-char  main(void)
+int main(void)
 {
-	char i;
-	for (i = 'a' ; i <= 'z' ; i++)
-		putchar(i);
-	putchar("\n");
+	char alp[26] = "abcdefghijklmnopqrst";
+	int i;
+
+	for (i = 0; i < 26; i++)
+		putchar(alp[i]);
+	putchar('\n');
 	return (0);
 }
