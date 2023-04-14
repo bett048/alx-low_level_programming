@@ -24,6 +24,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		nptr = malloc(new_size);
 		if (nptr ==  NULL)
+			return (NULL);
+	}
+	if (new_size > old_size && (ptr != NULL))
+	{
+		nptr = malloc(new_size);
+		if (nptr == NULL)
 			return (nptr);
 		for (i = 0; i < old_size; i++)
 			nptr[i] = *((char *)ptr + 1);
