@@ -2,5 +2,5 @@
 #define MAIN_H
 
 int main (int argc, char *argv[]);
-int_atoi(char *s)
+int _atoi(char *s)
 #endif
